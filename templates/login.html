@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login2.css') }}">
+    <title>Entrar | ND</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <!-- <div id="btn"></div> -->
+                <h4>Acesse sua conta</h4>
+                <!-- <button type="button" class="toggle-btn" onclick="login()">Acessar</button> -->
+                <!-- <button type="button" class="toggle-btn" onclick="register()">Register</button> -->
+            </div>
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="static/imgs/login-reg-img/tw.png" alt="instagram"></a>  
+              <a href="https://accounts.google.com" target="_blank"> <img src="static/imgs/login-reg-img/gp.png" alt="google"></a>
+              <a href="https://www.facebook.com" target="_blank"> <img src="static/imgs/login-reg-img/fb.png" alt="facebook"></a>
+            </div>
+
+            <form action="" id="login" class="input-group" method="POST">
+                <input type="text"  name="login-account" class="input-field" placeholder="Id da Conta" required>
+                <input type="password" name="login-password" class="input-field" placeholder="Senha da Conta" required>
+                <input type="checkbox" name="login-chech-box" class="chech-box"> <span>Esqueci a senha!</span>
+                <button type="submit" class="submit-btn"> Entrar </button>
+            </form>
+
+            <!-- <form action="/login" id="register" class="input-group" method="POST">
+                <input type="text" name="register-account" class="input-field" placeholder="Id da Conta" required>
+                <input type="email" name="register-email" class="input-field" placeholder="E-mail" required>
+                <input type="password" name="register-password" class="input-field" placeholder="Senha da Conta" required>
+                <input type="checkbox" name="register-chech-box" class="chech-box"> <span>Concordar</span>
+                <button type="submit" class="submit-btn"> Registrar </button>
+            </form> -->
+        </div>
+        
+    </div>
+
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0';
+        }
+
+    </script>
+</body>
+</html>

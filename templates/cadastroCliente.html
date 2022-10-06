@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/imgs/pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastroCliente.css') }}">
+    <title> Cadastro Cliente | Nargas Delivery </title>
+</head>
+<body>
+    <div class="topContainer">
+        <h1>Seja um parceiro ou entregador Nargas Delivery :)</h1>
+    </div>
+
+    <div class="centerContainer">
+        <h1 class="centerCont_title">👤 Cadastro Cliente 👤</h1>
+        </br>
+        <form name="customerRegister" action="" method="POST">
+            <label for="name">
+                Nome Completo:
+                <input type="text" name="name" id="name">
+            </label></br>
+
+            <label for="">
+                Cnpj:
+                <input type="text" name="cpf" id="cpf">
+            </label></br>
+
+            <label for="">
+                Sexo:
+                <input type="radio" name="sexo" id="masculino" value="masculino">Masculino
+                <input type="radio" name="sexo" id="feminino" value="feminino">Feminino
+            </label></br>
+
+            <label for="">
+                Data Nascimento:
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </label></br>
+
+            <label for="">
+                Telefone:
+                <input type="tel" name="telefone" id="telefone">
+            </label></br>
+
+            <label for="">
+                E-mail:
+                <input type="email" name="email" id="email">
+            </label></br>
+
+            <label for="">
+                Pais:
+                <input type="text" name="pais" id="pais">
+            </label></br>
+
+            <label for="">
+                Estado:
+                <input type="text" name="estado" id="estado">
+            </label></br>
+
+            <label for="">
+                Municipio:
+                <input type="text" name="municipio" id="municipio">
+            </label></br>
+
+            <label for="">
+                Senha:
+                <input type="text" name="senha" id="municipio">
+            </label></br>
+
+            <input type="submit" value="cadastrar" id="cadastrar">
+
+
+
+
+
+            <!-- <ul class="options_list">
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_loja" value="loja" class="radio">
+                    🏬 Lojaa
+                </li>
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_entregador" value="entregador" class="radio">
+                    🏍️ Entregador 
+                </li>
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_cliente" value="cliente" class="radio">
+                    👤 Cliente 
+                </li>
+                <li>
+                    <input type="submit" value="cadastrar" id="cadastrar">
+                </li>
+            </ul> -->
+        </form>
+    </div>
+    <!-- <script src="/js/login.js"></script> -->
+    <!-- <footer>By. Caique R</footer> -->
+</body>
+</html>

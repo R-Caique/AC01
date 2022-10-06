@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/imgs/pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastroCliente.css') }}">
+    <title> Cadastro Loja | Nargas Delivery </title>
+</head>
+<body>
+    <div class="topContainer">
+        <h1>Seja um parceiro ou entregador Nargas Delivery :)</h1>
+    </div>
+
+    <div class="centerContainer">
+        <h1 class="centerCont_title">🏬 Cadastro Loja 🏬</h1>
+        </br>
+        <form name="storeRegister" action="" method="POST">
+            <label for="name">
+                Nome Fantasia:
+                <input type="text" name="name" id="name">
+            </label></br>
+
+            <label for="">
+                Cnpj:
+                <input type="text" name="cnpj" id="cnpj">
+            </label></br>
+
+            <label for="">
+                Telefone:
+                <input type="tel" name="telefone" id="telefone">
+            </label></br>
+
+            <label for="">
+                E-mail:
+                <input type="email" name="email" id="email">
+            </label></br>
+
+            <label for="">
+                Pais:
+                <input type="text" name="pais" id="pais">
+            </label></br>
+
+            <label for="">
+                Estado:
+                <input type="text" name="estado" id="estado">
+            </label></br>
+
+            <label for="">
+                Municipio:
+                <input type="text" name="municipio" id="municipio">
+            </label></br>
+
+            <label for="">
+                Senha:
+                <input type="text" name="senha" id="municipio">
+            </label></br>
+
+            <input type="submit" value="cadastrar" id="cadastrar">
+
+        </form>
+    </div>
+</body>
+</html>

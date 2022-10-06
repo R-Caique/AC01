@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(116, 1, 1);
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* text-align:left; */
+    padding: 20px 60px
+}
+
+label{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px
+}
+
+input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    padding: 5px;
+    height: 40px;
+    width: 70%;
+    cursor: pointer;
+}
+
+input:hover{
+    border-radius: 5px;
+    background-color: rgba(133, 115, 0, 0.065)
+}
+
+#masculino{
+    margin-right: -200px;
+}
+
+#feminino{
+    margin-right: -200px;
+    margin-left: -150px;
+}
+
+#moto{
+    margin-right: -250px;
+    margin-left: -135px;
+}
+
+#bicicleta{
+    margin-right: -200px;
+    margin-left: -150px;
+}
+
+
+.topContainer {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+
+.centerContainer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    margin: 2%;
+}
+
+#cadastrar{
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%
+}
+
+#cadastrar:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(1, 170, 1, 0.903);
+}

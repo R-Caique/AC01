@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/imgs/pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro.css') }}">
+    <title> Cadastro | Nargas Delivery </title>
+</head>
+<body>
+    <div class="topContainer">
+        <h1>Seja um parceiro ou entregador Nargas Delivery :)</h1>
+    </div>
+
+    <div class="centerContainer">
+        <h1 class="centerCont_title">Selecione qual o tipo de cadastro deseja realizar!</h1>
+        </br>
+        <form name="select_registerType" action="{{ results_page }}" method="POST">
+            <ul class="options_list">
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_loja" value="loja" class="radio">
+                    🏬 Lojaa
+                </li>
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_entregador" value="entregador" class="radio">
+                    🏍️ Entregador 
+                </li>
+                <li>
+                    <input type="radio" name="radio_type" id="cadastro_cliente" value="cliente" class="radio">
+                    👤 Cliente 
+                </li>
+                <li>
+                    <input type="submit" value="cadastrar" id="cadastrar">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!-- <script src="/js/login.js"></script> -->
+    <!-- <footer>By. Caique R</footer> -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/imgs/—Pngtree—red and white frame and_5502457.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title> Login | Nargas Delivery </title>
+</head>
+<body>
+    <div class="container">
+        <div class="siderigth">
+            <div>
+                <img class="logoImg" src="/static/imgs/logo_login.png" alt="logo">
+            </div>
+            <div class="divTextLogo">
+                <p class="textLogo">Seja Bem Vindo ao Nargas Delivery!</p>
+            </div> 
+        </div>
+
+        
+        <div class="sideleft">            
+            <form name="login" action="login" method="POST">
+                <h1>Acesse sua conta!</h1> <br/>
+
+                <div class="internalDivision">
+                    <label for="">  
+                        Loja
+                        <input type="radio" id="radio_loja" name="access" value="loja" checked>
+                    </label><br>
+
+                    <label for="">  
+                        Entregador
+                        <input type="radio" id="radio_entregador" name="access" value="entregador">
+                    </label><br>
+
+                    <label for="">  
+                        Cliente
+                        <input type="radio" id="radio_cliente" name="access" value="cliente">
+                    </label><br>
+                </div>
+
+                <label for="">
+                    Conta:<br/>
+                    <input type="text" id="account" name="account" placeholder="👤 Seu usuário..."  required>
+                </label><br>
+
+                <label for="">
+                    Senha:<br/>
+                    <input type="password" id="password" name="password" placeholder="🔑 Sua senha..." required>
+                </label><br>
+
+                <label for="">
+                    <input type="submit" class="bt_entrar" value="Entrar">
+                </label>
+
+               <p>Ainda não é usuário? <a href="/cadastro" target="_blank">Cadastre-se</a></p> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

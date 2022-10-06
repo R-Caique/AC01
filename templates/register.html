@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login2.css') }}">
+    <title>Registre-se | Nargas Delivery</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <h4>Registre-se agora!</h4>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank"><img src="static/imgs/login-reg-img/tw.png" alt="instagram"></a>  
+              <a href="https://accounts.google.com" target="_blank"> <img src="static/imgs/login-reg-img/gp.png" alt="google"></a>
+              <a href="https://www.facebook.com" target="_blank"> <img src="static/imgs/login-reg-img/fb.png" alt="facebook"></a>
+            </div>
+
+            <form action="" id="login" class="input-group" method="POST">
+                <input type="text" name="register-account" class="input-field" placeholder="Id da Conta" required>
+                <input type="email" name="register-email" class="input-field" placeholder="E-mail" required>
+                <input type="password" name="register-password" class="input-field" placeholder="Senha da Conta" required>
+                <input type="checkbox" name="register-chech-box" class="chech-box" required> <span>Concordar</span>
+                <button type="submit" class="submit-btn"> Registrar </button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

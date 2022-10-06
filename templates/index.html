@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nargas Delivery</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename = 'imgs/icon-page.png') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+</head>
+<body>
+    
+    <section id="header">
+        <!-- <a href="#"><img src="./img/logo_nd2.png" class="logo" alt=""> </a>  -->
+        <a class="logo" href="index.html">Nargas Delivery</a>
+        
+        <div>
+            <ul id="navbar">
+                <li> <a class="active" href="index.html"> Inicio </a> </li>
+                <li> <a class="otherItem" href="shop.html"> Loja </a> </li>
+                <li> <a class="otherItem" href="about.html"> Sobre </a> </li>
+                <li> <a class="otherItem" href="context.html"> Contatos </a> </li>
+                <!-- <li> <a href="cart.html"> <img src="/img/shopping-bag-svgrepo-com.svg" class="shopBag" alt="shopBag" title="shopBag"></a></li> -->
+                {% if logado %}
+                <li> <a href="/shop" class="nav-shopBag"> <img class="nav-img-shopBag" src="static/imgs/shopping-bag.png" alt=""></a> </li>
+                <li>
+                    <div class="authorizedUser">
+                        <a href="/user" class="user"> Bem Vindo {{logado}}! </a>
+                    </div>
+                </li>
+                {% else %}
+                <li> 
+                    <div class="access-control">
+                        <a href="/login" class="login"> Entrar </a>
+                        <span class="pipe-divisory">/</span>
+                        <a href="/register" class="login"> Registrar-se </a>
+                    </div>
+                </li>
+                {% endif %}
+                
+            </ul>
+        </div>
+    </section>
+
+    <sectin id="hero">
+        <h4>Tabacaria - webstore</h4>
+        <h2>Todos os produtos </h2>
+        <h1>Em um único lugar!</h1>
+        <p>Promoções de até 50% OFF</p>
+        <button>Shop Now</button>
+    </sectin>
+
+    <!-- <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="/img/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/img/features/f2.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/img/features/f3.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/img/features/f4.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/img/features/f5.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/img/features/f6.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+    </section> -->
+    
+    <section id="product1" class="section-p1">
+        <h2>Lista de Produtos</h2>
+        <p>Kit's e produtos mais recentes do mercado.</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="/static/imgs/products/Narguile Joy Booom Luminous.PNG" alt="">
+                <div class="des">
+                    <span>Triton</span>
+                    <h5>Triton Zip</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>R$ 350</h4>
+                </div>
+                <a href="#" class="shopCart"><i class="fal fa-shopping-cart"></i> 🛒</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Inscrever-se para novas atualizações</h4>
+            <p>Inscreva seu e-mail para novos lançamentos e <span>promoções</span>. </p>
+        </div>
+        <div class="form">
+            <input type="text" name="" id="" placeholder="Insira seu e-mail...">
+            <button>Cadastre-se</button>
+        </div>
+    </section>
+
+
+    <script src="./js/index_script.js"></script>
+</body>
+</html>

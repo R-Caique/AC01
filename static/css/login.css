@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    color: rgb(219, 216, 5);
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    font-size: 25px;
+    outline: none;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.container{
+    display:flex;    
+}
+
+.siderigth{
+    flex: 1;
+    width: 100px;
+    /* background: grey; */
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.sideleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(116, 1, 1);
+    width: 30%;
+    height: 100vh;
+    padding: 10px;    
+}
+
+.sideleft label{
+    display: block;
+    margin-bottom: 20px
+}
+
+.logoImg{
+    max-width: 500px;
+}
+
+.container.siderigth{
+    display: block;
+}
+.divTextLogo{
+    font-size: 20px;
+    font-weight: bold;
+    display: b
+}
+
+.bt_entrar:hover{
+    background-color: rgb(0, 237, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.internalDivision{
+    display: inline-flex;
+    margin-left: 10px
+}
+
